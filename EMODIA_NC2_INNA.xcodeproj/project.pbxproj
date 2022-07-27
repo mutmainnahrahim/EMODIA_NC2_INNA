@@ -13,6 +13,10 @@
 		442446F428914D3F009E9CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442446F228914D3F009E9CB9 /* Main.storyboard */; };
 		442446F628914D40009E9CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442446F528914D40009E9CB9 /* Assets.xcassets */; };
 		442446F928914D40009E9CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442446F728914D40009E9CB9 /* LaunchScreen.storyboard */; };
+		4424474628917C65009E9CB9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424474128917C65009E9CB9 /* ImageViewController.swift */; };
+		4424474728917C65009E9CB9 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424474228917C65009E9CB9 /* Class.swift */; };
+		4424474828917C65009E9CB9 /* PredictionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424474328917C65009E9CB9 /* PredictionManager.swift */; };
+		4424474928917C65009E9CB9 /* FaceEmotionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4424474428917C65009E9CB9 /* FaceEmotionClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		442446F528914D40009E9CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442446F828914D40009E9CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442446FA28914D40009E9CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4424474128917C65009E9CB9 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		4424474228917C65009E9CB9 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		4424474328917C65009E9CB9 /* PredictionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionManager.swift; sourceTree = "<group>"; };
+		4424474428917C65009E9CB9 /* FaceEmotionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FaceEmotionClassifier.mlmodel; path = ../FaceEmotionClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				442446EC28914D3E009E9CB9 /* AppDelegate.swift */,
 				442446EE28914D3E009E9CB9 /* SceneDelegate.swift */,
-				442446F028914D3F009E9CB9 /* ViewController.swift */,
-				442446F228914D3F009E9CB9 /* Main.storyboard */,
+				44244709289173DF009E9CB9 /* Image Processing */,
+				44244700289160D7009E9CB9 /* Initial Screen */,
 				442446F528914D40009E9CB9 /* Assets.xcassets */,
+				4424474228917C65009E9CB9 /* Class.swift */,
+				442446F228914D3F009E9CB9 /* Main.storyboard */,
 				442446F728914D40009E9CB9 /* LaunchScreen.storyboard */,
 				442446FA28914D40009E9CB9 /* Info.plist */,
 			);
 			path = EMODIA_NC2_INNA;
+			sourceTree = "<group>";
+		};
+		44244700289160D7009E9CB9 /* Initial Screen */ = {
+			isa = PBXGroup;
+			children = (
+				442446F028914D3F009E9CB9 /* ViewController.swift */,
+			);
+			path = "Initial Screen";
+			sourceTree = "<group>";
+		};
+		44244709289173DF009E9CB9 /* Image Processing */ = {
+			isa = PBXGroup;
+			children = (
+				4424474428917C65009E9CB9 /* FaceEmotionClassifier.mlmodel */,
+				4424474128917C65009E9CB9 /* ImageViewController.swift */,
+				4424474328917C65009E9CB9 /* PredictionManager.swift */,
+			);
+			path = "Image Processing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +168,10 @@
 			files = (
 				442446F128914D3F009E9CB9 /* ViewController.swift in Sources */,
 				442446ED28914D3E009E9CB9 /* AppDelegate.swift in Sources */,
+				4424474928917C65009E9CB9 /* FaceEmotionClassifier.mlmodel in Sources */,
+				4424474828917C65009E9CB9 /* PredictionManager.swift in Sources */,
+				4424474628917C65009E9CB9 /* ImageViewController.swift in Sources */,
+				4424474728917C65009E9CB9 /* Class.swift in Sources */,
 				442446EF28914D3E009E9CB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
